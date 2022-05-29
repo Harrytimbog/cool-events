@@ -11,9 +11,9 @@ const DUMMY_EVENTS = [
   },
   {
     id: 'e2',
-    title: 'Networking for introverts',
+    title: 'Indoor games for friends',
     description:
-      "We know: Networking is no fun if you are an introvert person. That's why we came up with this event - it'll be so much easier. Promised!",
+      "We know: Indoor games are cool for cronies. That's why we came up with this event - it'll be so much easier. Promised!",
     location: 'New Wall Street 5, 98765 New Work',
     date: '2021-05-30',
     image: 'images/indoor-event.jpg',
@@ -21,9 +21,9 @@ const DUMMY_EVENTS = [
   },
   {
     id: 'e3',
-    title: 'Networking for extroverts',
+    title: 'Outdoor gaming',
     description:
-      'You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.',
+      'You probably need to bond with friends and work partners. But focusing your energy correctly - that is something where most people can improve.',
     location: 'My Street 12, 10115 Broke City',
     date: '2022-04-10',
     image: 'images/extrovert-event.jpg',
@@ -31,9 +31,9 @@ const DUMMY_EVENTS = [
   },
   {
     id: 'e4',
-    title: 'Networking for extroverts',
+    title: 'Yoga',
     description:
-      'You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.',
+      'You probably need help to reduce stress and tend to your body and mind. Focusing your energy correctly - that is something where most people can improve.',
     location: 'My Street 12, 10115 Broke City',
     date: '2022-04-10',
     image: 'images/yoga-event.jpg',
