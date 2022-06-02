@@ -71,9 +71,16 @@ export async function getServerSideProps(context) {
   const numYear = +filteredYear;
   const numMonth = +filteredMonth;
 
-  if (isNaN(numYear) || isNaN(numMonth) || numYear > 2030 || numYear < 2021 || numMonth < 1 || numMonth > 12) {
+  if (
+    isNaN(numYear) ||
+    isNaN(numMonth) ||
+    numYear > 2030 ||
+    numYear < 2021 ||
+    numMonth < 1 ||
+    numMonth > 12
+  ) {
     return {
-      props: { hasError: true }
+      props: { hasError: true },
       // notFound: true,
       // redirect: {
       //   destination: '/error'
@@ -84,30 +91,16 @@ export async function getServerSideProps(context) {
   const filteredEvents = await getFilteredEvents({
     year: numYear,
     month: numMonth,
-  }); 
-
-  if (!filteredEvents || filteredEvents.length === 0) {
-    return (
-      <Fragment>
-        <ErrorAlert>
-          <p>No events found for the chose filter!</p>
-        </ErrorAlert>
-        <div className="center">
-          <Button link='/events'>Show All Events</Button>
-        </div>
-      </Fragment>
-    );
-  }
-
+  });
 
   return {
     props: {
       events: filteredEvents,
       date: {
         year: numYear,
-        month: numMonth
-      }
-    }
+        month: numMonth,
+      },
+    },
   };
 }
 
