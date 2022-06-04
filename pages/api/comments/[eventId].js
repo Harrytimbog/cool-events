@@ -11,7 +11,7 @@ const handler = (req, res) => {
       return;
     }
     const newComment = {
-      id: new Date().toISOString,
+      id: new Date().toISOString(),
       email,
       name,
       text,
